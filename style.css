@@ -1,0 +1,317 @@
+/*
+Theme Name: AppBooksTheme
+Theme URI: http://www.jeffohrt.com/AppBooks/
+Author: Jeff Ohrt
+Author URI: http://www.jeffohrt.com
+Description: Old School, Black and White, internally supports jQuery, jQuery UI, HighCharts, MathJax (MML)
+
+Version: 20170101
+*/
+
+
+body { font-size: 16px; }
+
+img { padding: 10px; }
+
+div { padding: 10px; font-size: 16px; }
+
+p { font-size: 16px; }
+
+iframe { border: none; width: 100%; height: 1000px; }
+embed { border: none; width: 100%; height: 1000px; }
+object { border: none; width: 100%; height: 1000px; }
+
+/* ID's */
+
+/* Classes */
+
+.solid { margin: 10px; padding: 10px; border: 1px black solid; 
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+.dashed { margin: 10px; padding: 10px; border: 1px black dashed; 
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+.code { padding: 10px; margin: 10px;
+   background-color: rgb(224,224,224);
+   border: 2px solid lime;
+   border-style: groove;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+.terminal { padding: 10px; margin: 10px;
+   background-color: rgb(224,224,224);
+   border: 2px solid lime;
+   border-style: groove;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+.sixfour { width: 600px; height: 400px; }
+
+.l { text-align: left; }
+.fl { float: left; }
+.r { text-align: right; }
+.fr { float: right; }
+.c { text-align: center; }
+.fc { float: center; }
+.b { font: bold; }
+.i { font: italic; }
+.u { text-decoration: underline; }
+
+.clear { clear: both; }
+
+.red { color: black; background-color: red; }
+.orange { color: black; background-color: orange; }
+.yellow { color: black; background-color: yellow; }
+.green { color: white; background-color: green; }
+.blue { color: black; background-color: blue; }
+.indigo { color: black; background-color: indigo; }
+.violet { color: black; background-color: violet; }
+
+.black { color: white; background-color: black; }
+.lime { color: black; background-color: lime; }
+.aqua { color: black; background-color: aqua; }
+.silver { color: black; background-color: silver; }
+.pink { color: black; background-color: fuchsia; }
+
+.white {color: black; background-color: white; }
+
+.sms1 {color: black; background-color: DodgerBlue; }
+.sms2 {color: black; background-color: LawnGreen; }
+
+
+/* Links */
+
+a:link { color: white !important; text-decoration: none; background-color: black; display:inline-block; line-height: 1;
+   margin: 5px; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+
+a:visited { color: white !important; text-decoration: none; background-color: black; display:inline-block; line-height: 1;
+   margin: 5px; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+
+a:hover { color: white !important; text-decoration: none; background-color: black; display:inline-block; line-height: 1;
+   margin: 5px; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+
+a:active { color: white !important; text-decoration: none; background-color: black; display:inline-block; line-height: 1;
+   margin: 5px; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+}
+
+/*
+
+Top Left jQuery UI Tabs for AppBooks
+
+*/
+
+.AppBooks-tabs { width: 100%; font-size: 16px; background: none; background-color: white !important; }
+
+.AppBooks-tabs,
+.AppBooks-tabs .ui-tabs-nav li a,
+.AppBooks-tabs .ui-tabs-nav { padding: 0; font-size: 16px; }
+
+.AppBooks-tabs .ui-tabs-panel { padding: 5px; font-size: 16px; }
+
+.AppBooks-tabs .ui-widget-header { border: none; width: 100%; font-size: 16px; background: none; background-color: white; }
+
+.AppBooks-tabs .ui-corner-all { 
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+.AppBooks-tabs .ui-tabs-nav li { position: relative; cursor: pointer; margin: 0; top: 0; font-size: 16px; }
+
+.AppBooks-tabs .ui-widget-header .ui-state-default { background: none; background-color: white; border: none; font-size: 16px; }
+
+.AppBooks-tabs .ui-tabs-nav li.ui-tabs-active,
+.AppBooks-tabs .ui-tabs-nav li:hover { background: none; color: white; font-size: 12px; }
+
+.AppBooks-tabs .ui-tabs-nav li .icon { background-position: center 3px; text-align: center; color: white; font-size: 16px; }
+
+.AppBooks-tabs .ui-tabs-nav li.ui-tabs-active .icon,
+.AppBooks-tabs .ui-tabs-nav li:hover .icon { color: white; font-size: 16px; }
+
+.AppBooks-tabs .ui-tabs-nav li.ui-tabs-active .icon:before,
+.AppBooks-tabs .ui-tabs-nav li:hover .icon:before { position: absolute; right: 0; top: 0; color: white; font-size: 16px; }
+
+.AppBooks-tabs .ui-tabs-nav li.ui-tabs-active .icon:after,
+.AppBooks-tabs .ui-tabs-nav li:hover .icon:after { position: absolute; left: 0; top: 0; color: white; font-size: 16px; }
+
+.AppBooks-tabs .ui-tabs-nav li a { outline: none; font-size: 100%; color: white; font-size: 16px; }
+
+.AppBooks-tabs .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; color: white; font-size: 16px; }
+
+.AppBooks-tabs > div { height: auto; font-size: 16px; background-color: white; }
+
+/*
+
+Right Column jQuery UI Tabs for AppBooks
+
+*/
+
+.AppBooks-tabs-right { background: none; position: relative; padding-right: 11em; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav { position: absolute; right: 0.25em; top: 0.25em; bottom: 0.25em; width: 10em; padding: 0.2em 0.2em 0.2em 0em; font-size: 16px;  }
+
+.AppBooks-tabs-right .ui-tabs-panel { padding: 5px; font-size: 16px;  }
+
+.AppBooks-tabs-right .ui-widget-header { border: none; background: none; font-size: 16px;  }
+
+.AppBooks-tabs-right .ui-corner-all {
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+.AppBooks-tabs-right .ui-tabs-nav li { width: 100%; border-left: none; font-size: 16px; 
+
+     border-bottom-width: 1px !important;
+     
+    -moz-border-radius: 0px 4px 4px 0px;
+    -webkit-border-radius: 0px 4px 4px 0px;
+     border-radius: 0px 4px 4px 0px;
+
+    overflow: hidden;
+}
+
+.AppBooks-tabs-right .ui-widget-header .ui-state-default { background: none; border: none; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav li.ui-tabs-active,
+.AppBooks-tabs-right .ui-tabs-nav li:hover { background: none; color: white; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav li .icon { background-position: center 3px; text-align: center; color: white; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav li.ui-tabs-active .icon,
+.AppBooks-tabs-right .ui-tabs-nav li:hover .icon { color: white; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav li.ui-tabs-active .icon:before,
+.AppBooks-tabs-right .ui-tabs-nav li:hover .icon:before { position: absolute; right: 0; top: 0; color: white; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav li.ui-tabs-active .icon:after,
+.AppBooks-tabs-right .ui-tabs-nav li:hover .icon:after { position: absolute; left: 0; top: 0; color: white; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav li a { outline: none; font-size: 100%; color: white; font-size: 16px; }
+.AppBooks-tabs-right .ui-tabs-nav li a { width: 100%; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav li.ui-tabs-active a { cursor: pointer; color: white; font-size: 16px; }
+
+.AppBooks-tabs-right .ui-tabs-nav li.ui-tabs-selected,
+.AppBooks-tabs-right .ui-tabs-nav li.ui-state-active {
+	left: -1px; font-size: 16px;
+	border-left: 1px solid transparent;
+}
+.AppBooks-tabs-right > div { height: auto; font-size: 16px; }
+
+
+/* hor & ver nested tabs from Keith Wood */
+
+.AppBooks-tabs-nested > .ui-tabs-panel { 
+    padding: 0em; 
+} 
+.AppBooks-tabs-nested-left { 
+    position: relative; 
+    padding-left: 6.5em; 
+} 
+.AppBooks-tabs-nested-left .ui-tabs-nav { 
+    position: absolute; 
+    left: 0.25em; 
+    top: 0.25em; 
+    bottom: 0.25em; 
+    width: 6em; 
+    padding: 0.2em 0 0.2em 0.2em; 
+} 
+.AppBooks-tabs-nested-left .ui-tabs-nav li { 
+    right: 1px; 
+    width: 100%; 
+    border-right: none; 
+    border-bottom-width: 1px !important; 
+    -moz-border-radius: 4px 0px 0px 4px; 
+    -webkit-border-radius: 4px 0px 0px 4px; 
+    border-radius: 4px 0px 0px 4px; 
+    overflow: hidden; 
+} 
+.AppBooks-tabs-nested-left .ui-tabs-nav li.ui-tabs-selected, 
+.AppBooks-tabs-nested-left .ui-tabs-nav li.ui-state-active { 
+    border-right: 1px solid transparent; 
+} 
+.AppBooks-tabs-nested-left .ui-tabs-nav li a { 
+    float: right; 
+    width: 100%; 
+    text-align: right; 
+} 
+.AppBooks-tabs-nested-left > div { 
+    height: 10em; 
+    overflow: auto; 
+}
+
+
+/* https://davidwalsh.name/css-flip */
+
+/* entire container, keeps perspective */
+
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+.vertical.flip-container {
+	position: relative;
+}
+
+	.vertical .back {
+		transform: rotateX(180deg);
+	}
+
+	.vertical.flip-container .flipper {
+		transform-origin: 100% 213.5px; /* half of height */
+	}
+
+	.vertical.flip-container:hover .flipper {
+		transform: rotateX(-180deg);
+	}
