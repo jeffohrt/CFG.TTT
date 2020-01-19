@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.phonegap.cfg.ttt" version="20200119" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>CFG.TTT</name>
     <description>
         Cooking for Grandpa : Tackling Tanning and Trapping
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="" href="">
+        Jeff Ohrt
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
